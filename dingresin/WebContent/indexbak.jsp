@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<%@ page language="java" import="java.util.*" contentType="text/html;charset=utf-8" pageEncoding="GBK"  %>
+<%@ page language="java" import="java.util.*" contentType="text/html;charset=utf-8" pageEncoding="GBK"%>
 <html>
 <head>
 <meta http-equiv=Content-Type content="text/html;charset=utf-8">
@@ -137,7 +137,7 @@ function openLink(url){
 </li>
 <li>
   <div class="icon"><img src="list/num7.png" style="width: 25px; height: 25px"></div>
-  <div class="text">OAϵͳ</div>
+  <div class="text">OA system</div>
 </li>
 </ul>
  <script type="text/javascript">

@@ -191,7 +191,7 @@ public class AuthHelper {
 	       
 			ticket = AuthHelper.getJsapiTicket(accessToken);
 			signature = AuthHelper.sign(ticket, nonceStr, timeStamp, signedUrl);
-			agentid = "76632107";
+			agentid = "";
 			
 		} catch (OApiException  e) {
 			// TODO Auto-generated catch block

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<%@ page language="java" import="java.util.*" contentType="text/html;charset=utf-8" pageEncoding="GBK"  %>
+<%@ page language="java" import="java.util.*" contentType="text/html;charset=utf-8"%>
 <html>
 <head>
 <meta http-equiv=Content-Type content="text/html;charset=utf-8">
@@ -28,7 +28,10 @@
 			border-bottom: 1px solid #ccc;
 			vertical-align: middle;
 		}
-        
+       	.imgSize{
+       		width: 50px; 
+       		height: 50px
+       	}
         .icon img {
 		height: 70px;
 		width: 70px;
@@ -50,12 +53,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<title>ÆóÒµ¿ª·¢ÕßÊ×Ò³</title>
+<title>ISVå¼€å‘è€…é¦–é¡µ</title>
 <script type="text/javascript">
-
-//ÔÚ´ËÄÃµ½È¨ÏŞÑéÖ¤ÅäÖÃËùĞèÒªµÄĞÅÏ¢
 var _config = <%= com.alibaba.dingtalk.openapi.demo.auth.AuthHelper.getConfig(request) %>;
-
 </script>
 <script type="text/javascript" src="javascripts/zepto.min.js"></script>
 <script type="text/javascript" src="http://g.alicdn.com/ilw/ding/0.7.3/scripts/dingtalk.js">
@@ -83,7 +83,7 @@ function openLink(url){
 
 <body >
 	<!-- <div align="center">
-		<img id ="userImg" alt="Í·Ïñ" src="./nav/default.png">
+		<img id ="userImg" alt="å¤´åƒ" src="./nav/default.png">
 	</div>
 	<div align="center">
 		<span>UserName:</span>
@@ -94,50 +94,46 @@ function openLink(url){
 		<div id="userId" style="display:inline-block"></div>
 	</div> -->
 	<br>
-	<div style="padding-left:10px;">&nbsp;&nbsp;&nbsp;&nbsp;»¶Ó­Äú£º<div id="userName" style="display:inline-block;font-weight:bold"></div>&nbsp;³ÉÎª¶¤¶¤¿ª·¢Õß£¬Äúµ±Ç°ÔÚ¶¤¶¤µÄ<code>userId</code>Îª£º
-		<div id="userId" style="display:inline-block;font-weight:bold"></div> ¡£</div>
-	<div style="padding-left:10px;">&nbsp;&nbsp;&nbsp;&nbsp;ÎÒÃÇÎªÄúÌá¹©ÁËÎÄµµ£«<code>api</code>°ïÖúÄú¿ìËÙµÄ¿ª·¢Î¢Ó¦ÓÃ²¢½ÓÈë¶¤¶¤¡£</div>
+	<div style="padding-left:10px;padding-right:10px;">&nbsp;&nbsp;&nbsp;&nbsp;æ¬¢è¿æ‚¨ï¼š<div id="userName" style="display:inline-block;font-weight:bold"></div>&nbsp;æˆä¸ºé’‰é’‰ISVï¼Œæ‚¨å½“å‰åœ¨é’‰é’‰çš„<code>userId</code>ä¸ºï¼š
+		<div id="userId" style="display:inline-block;font-weight:bold"></div> ã€‚</div>
+	<div style="padding-left:10px;padding-right:10px;">&nbsp;&nbsp;&nbsp;&nbsp;æˆ‘ä»¬ä¸ºæ‚¨æä¾›äº†æ–‡æ¡£ï¼‹<code>api</code>å¸®åŠ©æ‚¨å¿«é€Ÿçš„å¼€å‘ï¼ˆå¥—ä»¶ï¼‰å¾®åº”ç”¨å¹¶æ¥å…¥é’‰é’‰ã€‚</div>
 	<br>
  <ul>
 <li>
 	<div class="icon"><img src="list/num11.png" style="width: 25px; height: 25px"></div>
-	<div class="text">ÆóÒµ½ÓÈëÖ¸ÄÏ</div>
+	<div class="text">ISVæ¥å…¥æ–‡æ¡£</div>
 </li>
-<!-- <li>
-	<div class="icon"><img src="list/heart2.png"></div>
-	<div class="text">ÆóÒµÊÚÈ¨</div>
-</li>
-<li>
-	<div class="icon"><img src="list/heart3.png"></div>
-	<div class="text">ÆóÒµ½âÊÚÈ¨</div>
-</li> -->
 <li>
 	<div class="icon"><img src="list/num2.png" style="width: 25px; height: 25px"></div>
-	<div class="text">Ê¹ÓÃJSAPI</div>
+	<div class="text">JSAPI</div>
 </li>
 <li>
 	<div class="icon"><img src="list/num33.png" style="width: 25px; height: 25px"></div>
-	<div class="text">µ¼º½¿ò¼Ü</div>
+	<div class="text">å¯¼èˆªæ¡†æ¶</div>
 </li>
 <li>
 	<div class="icon"><img src="list/num4.png" style="width: 25px; height: 25px"></div>
-    <div class="text">ListÕ¹Ê¾£¨µ±Ç°½öÖ§³ÖAndroid£©</div>
+	<div class="text">Listå±•ç¤ºï¼ˆå½“å‰ä»…æ”¯æŒAndroidï¼‰</div>
 </li>
 <li>
 	<div class="icon"><img src="list/num5.png" style="width: 25px; height: 25px"></div>
-    <div class="text">²àÀ­Õ¹ÏÖ£¨µ±Ç°½öÖ§³ÖAndroid£©</div>
+	<div class="text">ä¾§æ‹‰å±•ç°ï¼ˆå½“å‰ä»…æ”¯æŒAndroidï¼‰</div>
 </li>
 <li>
   <div class="icon"><img src="list/num6.png" style="width: 25px; height: 25px"></div>
-  <div class="text">TabÒ³Ãæ£¨µ±Ç°½öÖ§³ÖAndroid£©</div>
+  <div class="text">Tabé¡µé¢ï¼ˆå½“å‰ä»…æ”¯æŒAndroidï¼‰</div>
 </li>
 <li>
   <div class="icon"><img src="list/num7.png" style="width: 25px; height: 25px"></div>
-  <div class="text">ÆóÒµÍ¨Ñ¶Â¼</div>
+  <div class="text">åº”ç”¨ä¸­å¿ƒæˆæƒ</div>
 </li>
 <li>
-  <div class="icon"><img src="list/num7.png" style="width: 25px; height: 25px"></div>
-  <div class="text">OAÏµÍ³</div>
+  <div class="icon"><img src="list/num8.png" style="width: 25px; height: 25px"></div>
+  <div class="text">å¿«é€Ÿéƒ¨ç½²å’Œæˆæƒå¾®åº”ç”¨</div>
+</li>
+<li>
+  <div class="icon"><img src="list/num9.png" style="width: 25px; height: 25px"></div>
+  <div class="text">è§£é™¤æˆæƒå¾®åº”ç”¨</div>
 </li>
 </ul>
  <script type="text/javascript">
@@ -148,35 +144,36 @@ window.addEventListener('load', function() {
 
 	var items = document.querySelectorAll('li');
 	var i = 0;
+	var url = 'http://123.56.71.118:8080/dd_demo/';
 	items[0].addEventListener('click',function(){
- 		/* window.location='http://ddtalk.github.io/dingTalkDoc/#ÆóÒµ½ÓÈëÖ¸ÄÏ'; */
- 		openLink('http://ddtalk.github.io/dingTalkDoc/#ÆóÒµ½ÓÈëÖ¸ÄÏ');
+ 	 window.location='http://ddtalk.github.io/dingTalkDoc/#isvæ¥å…¥æŒ‡å—'; 
+ 		
 	});
 	items[1].addEventListener('click',function(){
 		openLink('http://h5.m.laiwang.com/home/ding.html');
-	});
+ 	});
 	items[2].addEventListener('click',function(){
-		 window.location='./nav/1.html';
+	 window.location='./nav/1.html'; 	
 	});
-	
-	
 	items[3].addEventListener('click', function(){
  		window.location = './list/list.html'; 
-	});
-	
+ });
 	items[4].addEventListener('click',function(){
- 	 	window.location='./drawer/index.html'; 
-	});
+		 window.location='./drawer/index.html'; 
+ 	});
 	items[5].addEventListener('click',function(){
- 		 window.location='./tab/index.html'; 
-	});
+ 		window.location='./tab/index.html';
+	});	
 	items[6].addEventListener('click',function(){
- 		 window.location='./contacts.jsp?corpid='+_config.corpId; 
-	});	
+ 		window.location='http://market.aliyun.com/mobile/productDetail.html?showmenu=false&dd_share=false&code=cmdd008261&corpId=ding614d5d8168991fb3'; 
+
+	});
 	items[7].addEventListener('click',function(){
-		openLink('http://oa.pankoo.com.cn:10631'); 
-	});	
-	
+ 		window.location='https://app.dingtalk.com/isvauth/index.html?productCode=cmdd008261&inviteCode=3900&logo=lALOBU9vEHh4&noLimit=0&url=microappauth'; 
+	});
+	items[8].addEventListener('click',function(){
+ 		window.location='https://app.dingtalk.com/microtryout/fire_auth.html?showmenu=false&dd_share=false&corpId=ding614d5d8168991fb3&productCode=cmdd008261'; 
+	});
 </script>
  
 </body>
